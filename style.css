@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Product Sans Regular', sans-serif;
+
 }
 
 header {
@@ -31,14 +32,18 @@ header {
 
 .main-head input {
     margin-top: 22px;
+    width: 100%;
     margin-bottom: 25px; 
-    width: 90%;
     height: 40px;
     outline: none !important;
     border-radius: 100px;
     border: 1px solid grey;
     font-family: Lato;
     padding: 0 15px;
+}
+
+.main-head form {
+    width: 90%;
 }
 
 .main-head input:hover {
@@ -64,27 +69,80 @@ header {
 .button-main {
     width: auto;
     height: 36px;
-    padding: 0 10px;
+    padding: 0 13px;
     border-radius: 3px;
     background-color: rgb(226, 226, 226);
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid grey;
+    transition: all 0.3s;
+    cursor: pointer;
+    
+}
+
+.button-main:hover,
+.button-main:active {
+    background-color: #4480ff;
+    color: white;
+    
+
+    
 }
 
 .main-nav {
     position: fixed;
     width: 100%;
-    padding: 10px 10px;
-    background-color: #fff;
+    height: 50px;
+    padding: 0;
+    background: rgb(219, 219, 219);
+    box-shadow: 3px 3px 5px grey;
+    
+    
+    
+    
     
 }
 
 .main-nav ul {
     display: flex;
     justify-content: space-evenly;
+    list-style: none;
+    justify-content: center;
+    height: 100%;
+  
     
     
+    
+}
+
+.main-nav li {
+    
+    display: flex;
+    padding: 5px;
+    width: 200px;
+    border-right: 1px solid;
+    border-color: grey;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: all 0.3s;
+    cursor: pointer;
+    
+    
+}
+
+.main-nav li:first-child {
+    border-left: 1px solid;
+    border-color: grey;
+    
+    
+}
+
+.main-nav li:hover,
+.main-nav li:active {
+    background-color: #4480ff;
+    color: white;
 }
 
 .products-section {
@@ -103,17 +161,44 @@ header {
 }
 
 .products-section li {
-    width: 250px;
-    height: 250px;
-    background: chocolate;
-    margin: 10px;
+    width: 280px;
+    height: 280px;
+    background: rgb(219, 219, 219);
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px grey;
+    
     
 }
+
+.products-section li h3 {
+    font-weight: 300;
+    font-size: 22px;    
+}
+
 
 
 
 .product-img {
-    width: 100%;
-    
+    width: 93%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px grey;
+    height: 60%;    
 }
 
+.products-section .bottom-li {
+    display: flex;
+    align-self: stretch;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+.price {
+    font-size: 20px;
+    
+}
